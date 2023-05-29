@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Soma&Co</title>
+</head>
+<body>
+    <!-- <header class="cabecalho">
+        <span class="cabecalho-logo">LOGO</span>
+        <nav class="navbar">
+            <ul class="navbar-menu">
+                <li class="navbar-menu-item"><a class="menu-navbar-link" href="#">Blusas</a></li>
+                <li class="navbar-menu-item"><a class="menu-navbar-link" href="#">Shorts</a></li>
+                <li class="navbar-menu-item"><a class="menu-navbar-link" href="#">Bonés</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <header class="cabecalho">
+        <nav class="navbar">
+            <ul class="navbar-menu">
+                <li class="navbar-menu-item"><a class="menu-navbar-link" href="#">LOGO</a></li>
+                <li class="navbar-menu-item"><a class="menu-navbar-link" href="#">PRODUTOS</a></li>
+                
+                <li class="navbar-menu-item"><a class="menu-navbar-link" href="#">CONTATOS</a></li>
+                <!-- <li class="icon">
+                    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+                  </li> -->
+            </ul>
+        </nav>
+    </header>
+    <section>  <!--fazer um slide de fotos-->
+        <div class="slide">   
+            <div class="meuSlide animacao"><img class="imagem" src="/img/img1.jpg" alt="Roupa1"></div>
+            <div class="meuSlide animacao"><img class="imagem" src="/img/img2.jpg" alt="Roupa2"></div>
+            <div class="meuSlide animacao"><img class="imagem" src="/img/img3.jpg" alt="Roupa3"></div>
+
+
+            <!-- Botoes de proximo e anterior -->
+            <a class="proximo" onclick="slide(-1)">&#10095;</a>
+            <a class="anterior" onclick="slide(1)">&#10094;</a>
+        </div>
+        <br>
+        <!-- Circulos de indicação -->
+        <div style="text-align: center;">
+            <span class="ponto-indicador" onclick="slideAtual(1)"></span>
+            <span class="ponto-indicador" onclick="slideAtual(2)"></span>
+            <span class="ponto-indicador" onclick="slideAtual(3)"></span>
+
+        </div>
+    </section>
+
+        <!-- Cards dos produtos -->
+    <section class="catalogo" >
+        <div class="card">
+            <div class="card-produto"><img class="card-produto-imagem" src="/img/img1.jpg" alt=""></div>
+            <div class="card-descricao">
+                <h2 class="card-nome-produto"> T-Shirt</h2>
+                <p class="card-preco-produto"> a partir de R$ 80</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-produto"><img class="card-produto-imagem" src="/img/img1.jpg" alt=""></div>
+            <div class="card-descricao">
+                <h2 class="card-nome-produto"> T-Shirt</h2>
+                <p class="card-preco-produto"> a partir de R$ 80</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-produto"><img class="card-produto-imagem" src="/img/img1.jpg" alt=""></div>
+            <div class="card-descricao">
+                <h2 class="card-nome-produto"> T-Shirt</h2>
+                <p class="card-preco-produto"> a partir de R$ 80</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-produto"><img class="card-produto-imagem" src="/img/img1.jpg" alt=""></div>
+            <div class="card-descricao">
+                <h2 class="card-nome-produto"> T-Shirt</h2>
+                <p class="card-preco-produto"> a partir de R$ 80</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="rodape">
+        <div class="missao gap"> 
+            <h4>Nossa missão</h4>
+            <p>A Insider nasceu para facilitar a vidas das pessoas por meio de roupas funcionais e tecnológicas.</p>
+            <ul class="missao-redes-sociais">
+                <li><a href="#"><img class="missao-redes-sociais-icones" src="/img/instagram.svg" alt=""></a></li>
+                <li><a href="#"><img class="missao-redes-sociais-icones" src="/img/whatsapp.svg" alt=""></a></li>
+            </ul>
+        </div>
+
+        <div class="duvidas gap">
+            <h4>Dúvidas</h4>
+            <ul>
+                <li><a href="#">Política de Privacidade e Segurança de Dados</a></li>
+                <li><a href="#">Termos e Condições de Uso da Insider</a></li>
+                <li><a href="#">Ajuda / FAQ</a></li>
+                <li><a href="#">Devoluções</a></li>
+                <li><a href="#">Política de reembolso</a></li>
+            </ul>
+        </div>
+
+        <div class="sobre gap">
+            <h4>Sobre</h4>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Nosso DNA</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Sustentabilidade</a></li>
+                <li><a href="#">Compre pra sua empresa</a></li>
+            </ul>
+        </div>
+        <p>CNPJ xx.xxx.xxx/0001-xx - Insider Comércio e Confecção de Peças do Vestuário Ltda.</p>
+        
+    </footer>
+
+        
+
+
+    
+    <script src="main.js"></script>
+</body>
+</html>

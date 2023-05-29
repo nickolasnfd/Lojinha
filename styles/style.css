@@ -1,0 +1,313 @@
+@import url(/styles/responsividade.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+body{
+    background-color: gainsboro;
+    width: 100vw;
+}
+/* Cabecalho */
+
+ .cabecalho{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    position: relative;
+    background-color: black;
+    
+    
+    
+}
+/*
+.navbar-menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80vw;
+    padding:10px ;
+} */
+
+nav {
+  
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 24px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  flex-grow: 1;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+nav.responsive ul {
+  flex-direction: column;
+  display: block;
+  position: absolute;
+  background-color: #333;
+  width: 100%;
+  z-index: 1;
+}
+
+nav.responsive li {
+  width: 100%;
+}
+
+nav.responsive a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+nav.responsive a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+nav.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+nav.responsive .icon a {
+  display: block;
+  text-align: right;
+  padding: 14px;
+  text-decoration: none;
+  color: white;
+}
+
+nav.responsive .icon a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* slide  */
+.slide{
+    
+    max-width: 100vw;
+    position: relative;
+    height: 95vh; 
+    
+}
+
+.imagem{
+    
+    width: 100%;
+    height: 95vh; 
+}
+
+.slides{
+    /* escondendo imagens por padrao */
+    display: none; 
+
+}
+
+/* botoes de proximo e anterior */
+.proximo, .anterior{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    
+}
+/* posição do botao proximo a direita */
+.proximo{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* No hover, adicionar um background preto um pouco translucido */
+.anterior:hover, .proximo:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Pontos indicadores */
+.ponto-indicador{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .ponto-indicador:hover{
+    background-color: #717171;
+}
+
+/* animação */
+.animacao{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+  }
+
+  /* Fim slide */
+
+  /* Cards dos produtos */
+  .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 20px 24px;
+    
+  }
+  .card-produto-imagem{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+  }
+
+  .catalogo{
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+  }
+
+  .rodape{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    height: 35rem;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: space-between;
+  }
+  .rodape a{
+    color: white;
+  }
+  .rodape h4{
+    color: #bbb;
+  }
+
+
+
+
+
+/* Mobile-First */
+@media (max-width:390px) {
+
+    /* Cabecalho */
+     .cabecalho{
+        height: 70px;
+        
+        width: 100vw;
+    }
+    /*
+    .cabecalho-logo{
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+        font-weight: bold;
+    }
+
+    .navbar-menu{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100vw;
+        padding:10px ;
+    } */
+
+    
+
+    /* Cards dos produtos */
+  .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 20px 24px;
+    
+  }
+  .card-produto-imagem{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+  }
+  .card-descricao{
+    padding-top: 10px;
+    margin-right: 40px;
+  }
+  .card-nome-produto{
+    padding-bottom: 5px;
+  }
+
+  /* Rodapé */
+  .rodape{
+    display: flex;
+    flex-wrap: nowrap;
+    height: auto;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 24px;
+    background-color: black;
+    color: white;
+    padding: 24px;
+    
+  }
+
+  
+
+  .gap{
+    line-height: 30px;
+    padding-bottom: 20px ;
+  }
+  .sobre{
+    border-bottom: 1px solid #bbb;
+  }
+  .missao-redes-sociais{
+    display: flex;
+    
+  }
+  .missao-redes-sociais-icones{
+    stroke: white;
+    fill: white;
+  }
+
+}
