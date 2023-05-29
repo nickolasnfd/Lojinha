@@ -152,6 +152,7 @@ nav.responsive .icon a:hover {
 /* posição do botao proximo a direita */
 .proximo{
     right: 0;
+    margin-right: 18px;
     border-radius: 3px 0 0 3px;
 }
 /* No hover, adicionar um background preto um pouco translucido */
