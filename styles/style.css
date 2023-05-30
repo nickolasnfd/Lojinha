@@ -123,8 +123,12 @@ nav.responsive .icon a:hover {
 
 .imagem{
     
-    width: 100%;
+    
+    width: 100vw;
     height: 95vh; 
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }
 
 .slides{
